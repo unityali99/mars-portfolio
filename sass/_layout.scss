@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    text-transform: capitalize;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+}
+
+.content {
+    display: flex;
+    font-size: 1.2rem;
+    @include respond-to(tablet) {
+        display: block;
+    }
+
+}
+
+.left-side {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.center {
+    display: flex;
+    flex: 0 0 26%;
+    flex-direction: column;
+    border-right: 2px solid var(--color-white);
+    border-left: 2px solid var(--color-white);
+    @include respond-to(tablet) {
+        margin-top: 5rem;
+        border-right: none;
+        border-left: none;
+        border-top: 2px solid var(--color-white);
+        
+    }
+}
+
+.right-side {
+    padding-top: 2rem;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
